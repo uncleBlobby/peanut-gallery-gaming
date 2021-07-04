@@ -46,6 +46,12 @@ h2 {
     padding: 3vh;
 }
 
+.navBTN:hover {
+    background-color:rgb(227, 225, 255);
+    color:rgb(74, 59, 160);
+    cursor: pointer;
+}
+
 #mainContent {
     position: relative;
     height: 70vh;
