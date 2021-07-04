@@ -1,0 +1,90 @@
+body, html {
+    font-family: "Courier New";
+    margin: 0;
+    padding: 0;
+    background-color: mediumslateblue;
+    width: 100%;
+    height: 100%;
+}
+
+#mainWrapper {
+    box-sizing: border-box;
+}
+
+h2 {
+    margin-top: 1vh;
+    margin-bottom: 1vh;  
+}
+
+#header {
+    box-sizing: border-box;
+    font-size: 100%;
+    color: rgb(214, 207, 255);
+    text-align: center;
+    height: 20vh;
+    width: 100vw;
+    border: 5px solid rgb(214, 207, 255);
+}
+
+.navBar {
+    box-sizing:border-box;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 10vh;
+    border: 1px solid rgb(214, 207, 255);
+}
+
+.navBTN {
+    box-sizing:border-box;
+    color: rgb(221, 214, 255);
+    display: block;
+    text-align:center;
+    height: 100%;
+    width: 33%;
+    border: 1px solid rgb(214, 207, 255);
+    padding: 3vh;
+}
+
+#mainContent {
+    position: relative;
+    height: 70vh;
+}
+
+@keyframes slideIn {
+    0% {height: 0vh; padding-top: 0;}
+    100% {height: 70vh; padding-top: 20%}
+}
+
+.content {
+    color: white;
+    text-align: center;
+    height: 70vh;
+    background-color:rgb(88, 73, 170);
+    box-sizing: border-box;
+    animation-name: slideIn;
+    animation-duration: 1s;
+}
+
+#home {
+    display: block;
+    padding-top: 20%;
+}
+
+#episodes {
+    display: none;
+    padding-top: 20%;
+
+}
+
+#contact {
+    display: none;
+    padding-top: 20%;
+}
+
+#footer {
+    color: white;
+    position: absolute;
+    text-align: center;
+    bottom: 1vh;
+}
