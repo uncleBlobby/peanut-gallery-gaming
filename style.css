@@ -60,7 +60,12 @@ h2 {
 
 @keyframes slideIn {
     0% {height: 0vh; padding-top: 0;}
-    100% {height: 70vh; padding-top: 20%}
+    100% {height: 70vh;}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 .content {
@@ -74,14 +79,33 @@ h2 {
 }
 
 #home {
+    padding-top: 5%;
+}
+
+.itemHeader {
+    display: inline-block;
+}
+
+#latestEpisodeIFRAME {
+
+}
+
+.episodePanel {
+    box-sizing: border-box;
     display: block;
-    padding-top: 20%;
+    margin-left: 5%;
+    margin-bottom: 1vh;
+    width: 90%;
+    height: fit-content;
+    animation-name: fadeIn;
+    animation-duration: 2s;
 }
 
 #episodes {
+    padding-top: 5vh;
     display: none;
-    padding-top: 20%;
-
+    height: fit-content;
+    background-color: rgb(88, 73, 170);
 }
 
 #contact {
