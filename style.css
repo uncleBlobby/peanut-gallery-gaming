@@ -12,6 +12,7 @@ body, html {
 }
 
 h2 {
+    color:rgb(234, 231, 255);
     margin-top: 1vh;
     margin-bottom: 1vh;  
 }
@@ -92,5 +93,31 @@ h2 {
     color: white;
     position: absolute;
     text-align: center;
-    bottom: 1vh;
+    bottom: 2.5vh;
+    left: 5vw;
+}
+
+.socialIcon {
+    display: inline-block;
+    height: 5vh;
+    width: 5vw;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#fbIcon {
+    background-image: url('./fbIcon.png');
+}
+
+#ytIcon {
+    background-image: url('./ytIcon.png');
+}
+
+#twIcon {
+    background-image: url('./twIcon.png');
+}
+
+#sfIcon {
+    background-image: url('./sfIcon.png');
 }
