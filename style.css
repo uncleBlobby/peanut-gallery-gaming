@@ -6,6 +6,33 @@ body, html {
     width: 100%;
     height: 100%;
 }
+@media only screen and (min-width: 200px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+
+@media only screen and (min-width: 400px) {
+    body {
+        font-size: 18px;
+        letter-spacing: 4px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    body {
+        font-size: 22px;
+        letter-spacing: 7px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        font-size: 26px;
+        letter-spacing: 10px;
+    }
+}
 
 #mainWrapper {
     box-sizing: border-box;
@@ -15,6 +42,22 @@ h2 {
     color:rgb(234, 231, 255);
     margin-top: 1vh;
     margin-bottom: 1vh;  
+}
+
+@media only screen and (min-height: 500px) {
+    h2 {
+        padding-top: 1vh;
+    }
+
+    #header {
+        padding-top: 2vh;
+    }
+}
+
+@media only screen and (min-height: 600px) {
+    h2 {
+        padding-top: 2.5vh;
+    }
 }
 
 #header {
