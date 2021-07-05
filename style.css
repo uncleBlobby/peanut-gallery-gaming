@@ -61,6 +61,7 @@ h2 {
 }
 
 #header {
+    position: relative;
     box-sizing: border-box;
     font-size: 100%;
     color: rgb(214, 207, 255);
@@ -68,6 +69,25 @@ h2 {
     height: 20vh;
     width: 100vw;
     border: 5px solid rgb(214, 207, 255);
+    background-image: linear-gradient(rgb(151, 134, 250), rgb(112, 94, 214));
+}
+
+.spinningPeanut {
+    background-image: url('./peanutIcon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 5vh;
+    margin-left: 40vw;
+    margin-top: 1vh;
+    animation-name: spinningPeanut;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spinningPeanut {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(180deg);}
+    100% {transform: rotate(360deg);}
 }
 
 .navBar {
@@ -99,6 +119,8 @@ h2 {
 #mainContent {
     position: relative;
     height: 70vh;
+    z-index: 1;
+    background-color: mediumslateblue;
 }
 
 @keyframes slideIn {
@@ -116,17 +138,21 @@ h2 {
     text-align: center;
     height: 70vh;
     background-color:rgb(88, 73, 170);
+    background-image: linear-gradient(rgb(114, 96, 216), rgb(151, 134, 250));
     box-sizing: border-box;
     animation-name: slideIn;
     animation-duration: 1s;
+
 }
 
 #home {
     padding-top: 5%;
+
 }
 
 .itemHeader {
     display: inline-block;
+    margin-top: 2vh;
 }
 
 #latestEpisodeIFRAME {
